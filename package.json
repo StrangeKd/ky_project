@@ -1,0 +1,20 @@
+{
+  "name": "ky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/nodejs/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrangeKd/ky_project.git"
+  },
+  "author": "StrangeKd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StrangeKd/ky_project/issues"
+  },
+  "homepage": "https://github.com/StrangeKd/ky_project#readme"
+}
