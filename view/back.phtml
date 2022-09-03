@@ -1,0 +1,21 @@
+<main>
+    <section class="backoffice-section">
+        <h2>New album</h2>
+
+        <form method="post" action="" enctype="multipart/form-data">
+            <div class="back-form-container">
+                <?= $albumForm->init() ?>
+                <?= isset($albumForm->msg) ? $albumForm->msg : ''; ?>
+            </div>
+        </form>
+
+        <h2>New article</h2>
+
+        <form method="post" action="" enctype="multipart/form-data">
+            <div class="back-form-container">
+                <?= $articleForm->init() ?>
+                <?= isset($articleForm->msg) ? $articleForm->msg : ''; ?>
+            </div>
+        </form>
+    </section>
+</main>

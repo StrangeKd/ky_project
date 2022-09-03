@@ -1,0 +1,32 @@
+<main>
+    <section>
+        <h1 class="artists-title">View top chart artists</h1>
+        <form class="search-wrapper" method="get">
+            <label for="search-artist">Search an Artist</label>
+            <input type="search" name="search-artist" id="search-artist">
+        </form>
+        <template data-artist-template>
+            <div class="artist-card">
+                <a data-link href="">
+                    <div class="artist-name" data-name></div>
+                    <div data-img>
+                        <img src="" alt="">
+                    </div>
+                </a>
+            </div>
+        </template>
+        <div class="artist-cards-container" id="artist-cards-container"></div>
+        <div class="pagination-container">
+            <div class="pagination-btn">
+                <button class="artist-btn" id="prev-btn">Previous</button>
+                <div class="current-artist-page" id="current-page"></div>
+                <button class="artist-btn" id="next-btn">Next</button>
+            </div>
+            <div class="go-to-page-container">
+                <label for="access-page">Access this page :</label>
+                <input class="access-page-input" name="access-page" type="text" id="access-page">
+                <button type="submit" id="access-btn">Go</button>
+            </div>
+        </div>
+    </section>
+</main>

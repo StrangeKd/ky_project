@@ -1,0 +1,26 @@
+<main>
+    <div>
+        <p>Hello <?= ($_SESSION['username']) ?> (Not <?= ($_SESSION['username']) ?> ? <a href="index.php?page=logout">Logout</a>)</p>
+    </div>
+
+    <?php if (!isset($_GET['action'])) : ?>
+        <button>
+            <a href="index.php?page=account&action=modify">Modify password</a>
+        </button>
+        <button>
+            <a href="index.php?page=account&action=delete">Delete my account</a>
+        </button>
+    <?php endif ?>
+
+    <?php if (isset($_GET['action'])) : ?>
+        <button>
+            <a href="index.php?page=account">Return</a>
+        </button>
+        <form method="post">
+            <?= renderModifyForm() ?>                
+        </form>
+        <form method="post">
+            <?= renderDeleteForm() ?>
+        </form>
+    <?php endif ?>
+</main>

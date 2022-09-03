@@ -1,0 +1,11 @@
+<main>
+    <div class="log-title">
+        <h1>Create your account now</h1>
+    </div>
+    <fieldset>
+        <form method="post">
+            <?= $registerForm->init(); ?>
+            <?= isset($registerForm->msg) ? $registerForm->msg : ''; ?>
+        </form>
+    </fieldset>
+</main>

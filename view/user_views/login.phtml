@@ -1,0 +1,11 @@
+<main>
+    <div class="log-title">
+        <h1>Sign In</h1>
+    </div>
+    <fieldset>
+        <form action="index.php?page=login" method="post">
+            <?= $loginForm->init() ?>
+            <?= isset($loginForm->msg) ? $loginForm->msg : ''; ?>
+        </form>
+    </fieldset>
+</main>
